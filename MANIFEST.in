@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include wireapp *.css
+recursive-include wireapp *.csv
+recursive-include wireapp *.html
+recursive-include wireapp *.ico
+recursive-include wireapp *.js
+recursive-include wireapp *.json
+recursive-include wireapp *.md
+recursive-include wireapp *.png
+recursive-include wireapp *.py
+recursive-include wireapp *.svg
+recursive-include wireapp *.txt
+recursive-exclude wireapp *.pyc
