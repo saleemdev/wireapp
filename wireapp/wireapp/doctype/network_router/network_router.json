@@ -1,0 +1,128 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:device_name",
+ "creation": "2021-09-30 14:37:47.886680",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "company",
+  "device_type",
+  "device_name",
+  "host",
+  "port",
+  "column_break_6",
+  "username",
+  "password",
+  "raw_json_list_section",
+  "address_list",
+  "address_list_section",
+  "client_addresses"
+ ],
+ "fields": [
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "device_type",
+   "fieldtype": "Data",
+   "label": "Device Type"
+  },
+  {
+   "fieldname": "device_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Device Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "port",
+   "fieldtype": "Data",
+   "label": "Port"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "username",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Username",
+   "reqd": 1
+  },
+  {
+   "fieldname": "password",
+   "fieldtype": "Data",
+   "label": "Password",
+   "print_hide": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "host",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Device IP Address",
+   "reqd": 1
+  },
+  {
+   "fieldname": "address_list",
+   "fieldtype": "Code",
+   "label": "Address List",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "raw_json_list_section",
+   "fieldtype": "Section Break",
+   "label": "Raw JSON List"
+  },
+  {
+   "fieldname": "address_list_section",
+   "fieldtype": "Section Break",
+   "label": "Address List"
+  },
+  {
+   "depends_on": "eval:doc.client_addresses",
+   "fieldname": "client_addresses",
+   "fieldtype": "Table",
+   "label": "Client Addresses",
+   "options": "Network Router Address List"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-09-30 23:43:56.278625",
+ "modified_by": "Administrator",
+ "module": "Wireapp",
+ "name": "Network Router",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
