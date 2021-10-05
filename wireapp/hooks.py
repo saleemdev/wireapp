@@ -1,4 +1,5 @@
-from . import __version__ as app_version
+from __future__ import unicode_literals
+from . import __version__ 
 
 app_name = "wireapp"
 app_title = "Wireapp"
