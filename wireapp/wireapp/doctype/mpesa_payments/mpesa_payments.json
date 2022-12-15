@@ -1,0 +1,175 @@
+{
+ "actions": [],
+ "creation": "2022-12-16 00:02:13.923115",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "request_id",
+  "phone_number",
+  "is_processed",
+  "reference_number",
+  "amount",
+  "merchant_request_id",
+  "result_code",
+  "result_description",
+  "transaction_time",
+  "column_break_5",
+  "account_balance",
+  "bill_reference_number",
+  "invoice_number",
+  "sender_name",
+  "business_short_code",
+  "payment_entry",
+  "links_section",
+  "customer"
+ ],
+ "fields": [
+  {
+   "fieldname": "request_id",
+   "fieldtype": "Data",
+   "label": "Request ID",
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "phone_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Phone Number",
+   "set_only_once": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "is_processed",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Processed"
+  },
+  {
+   "fieldname": "reference_number",
+   "fieldtype": "Data",
+   "label": "Reference Number",
+   "set_only_once": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Amount",
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "merchant_request_id",
+   "fieldtype": "Data",
+   "label": "Merchant Request ID",
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "result_code",
+   "fieldtype": "Data",
+   "label": "Result Code"
+  },
+  {
+   "fieldname": "result_description",
+   "fieldtype": "Text",
+   "label": "Result Description",
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "transaction_time",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Transaction Time",
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "account_balance",
+   "fieldtype": "Float",
+   "label": "Balance"
+  },
+  {
+   "fieldname": "bill_reference_number",
+   "fieldtype": "Data",
+   "label": "Bill Reference Number"
+  },
+  {
+   "fieldname": "invoice_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Invoice Number"
+  },
+  {
+   "fieldname": "sender_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Customer Name"
+  },
+  {
+   "fieldname": "business_short_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Business Short Code"
+  },
+  {
+   "fieldname": "payment_entry",
+   "fieldtype": "Link",
+   "label": "Payment Entry",
+   "options": "Payment Entry"
+  },
+  {
+   "fieldname": "links_section",
+   "fieldtype": "Section Break",
+   "label": "Links"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-12-16 00:06:19.310583",
+ "modified_by": "Administrator",
+ "module": "Wireapp",
+ "name": "MPESA Payments",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "phone_number, reference_number, amount",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
